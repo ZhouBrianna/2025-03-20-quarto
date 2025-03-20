@@ -1,0 +1,30 @@
+
+  500  quarto create
+  501  quarto preview
+  509  git init
+  510  git status
+  511  git add .
+  512  git commit -m "my first website"
+  516  git remote add origin https://github.com/ZhouBrianna/2025-03-20-quarto.git
+  517  git branch -M main
+  518  git push -u origin main
+  519  git add .
+  520  git commit -m "add no jekyll to docs"
+  521  git push origin main
+  522  make render
+  523  make clean
+  524  make render
+  525  git add .
+  526  git commit -m "create Makefile"
+  527  git push origin main
+  529  git status
+  530  git add .
+  531  git commit -m "delete docs folder"
+  532  git push origin main
+  533  git reset --hard
+  534  git commit --allow-empty -m "Initialising gh-pages branch"
+  536  git switch --orphan gh-pages
+  537  git commit --allow-empty -m "Initialising gh-pages branch"
+  540  git push origin gh-pages
+  541  git switch main
+  542  quarto publish gh-pages
