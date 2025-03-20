@@ -1,0 +1,300 @@
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ quarto create
+? Create › project
+? Type › website
+? Directory › 2025-03-20-quarto
+? Title (2025-03-20-quarto) › My DSCI 310 Website
+
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ quarto preview
+Preparing to preview
+[1/2] index.qmd
+[2/2] about.qmd
+
+Watching files for changes
+Browse at http://localhost:5927/
+GET: /
+GET: /
+pandoc 
+  to: html
+  output-file: index.html
+  standalone: true
+  title-prefix: My DSCI 310 Website
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  css:
+    - styles.css
+  toc: true
+  
+metadata
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: en
+  editor:
+    render-on-save: true
+  theme:
+    - cosmo
+    - brand
+  title: My DSCI 310 Website
+  
+GET: /
+pandoc 
+  to: html
+  output-file: index.html
+  standalone: true
+  title-prefix: My DSCI 310 Website
+  section-divs: true
+  html-math-method: mathjax
+  wrap: none
+  default-image-extension: png
+  css:
+    - styles.css
+  toc: true
+  
+metadata
+  document-css: false
+  link-citations: true
+  date-format: long
+  lang: en
+  editor:
+    render-on-save: true
+  theme:
+    - cosmo
+    - brand
+  title: My DSCI 310 Website
+  
+GET: /
+^C(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ quarto preview
+Preparing to preview
+[1/2] index.qmd
+[2/2] about.qmd
+
+Watching files for changes
+Browse at http://localhost:6207/
+GET: /
+
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git init
+Initialized empty Git repository in /Users/briannazhou/2025-03-20-quarto/.git/
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        _quarto.yml
+        about.qmd
+        docs/
+        index.qmd
+        styles.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git add .
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git commit -m "my first website"
+[main (root-commit) 8c1add6] my first website
+ 25 files changed, 6056 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 _quarto.yml
+ create mode 100644 about.qmd
+ create mode 100644 docs/about.html
+ create mode 100644 docs/index.html
+ create mode 100644 docs/search.json
+ create mode 100644 docs/site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css
+ create mode 100644 docs/site_libs/bootstrap/bootstrap-icons.css
+ create mode 100644 docs/site_libs/bootstrap/bootstrap-icons.woff
+ create mode 100644 docs/site_libs/bootstrap/bootstrap.min.js
+ create mode 100644 docs/site_libs/clipboard/clipboard.min.js
+ create mode 100644 docs/site_libs/quarto-html/anchor.min.js
+ create mode 100644 docs/site_libs/quarto-html/popper.min.js
+ create mode 100644 docs/site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css
+ create mode 100644 docs/site_libs/quarto-html/quarto.js
+ create mode 100644 docs/site_libs/quarto-html/tippy.css
+ create mode 100644 docs/site_libs/quarto-html/tippy.umd.min.js
+ create mode 100644 docs/site_libs/quarto-nav/headroom.min.js
+ create mode 100644 docs/site_libs/quarto-nav/quarto-nav.js
+ create mode 100644 docs/site_libs/quarto-search/autocomplete.umd.js
+ create mode 100644 docs/site_libs/quarto-search/fuse.min.js
+ create mode 100644 docs/site_libs/quarto-search/quarto-search.js
+ create mode 100644 docs/styles.css
+ create mode 100644 index.qmd
+ create mode 100644 styles.css
+
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git remote add origin https://github.com/ZhouBrianna/2025-03-20-quarto.git
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git branch -M main
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git push -u origin main
+Enumerating objects: 33, done.
+Counting objects: 100% (33/33), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (33/33), 350.54 KiB | 10.62 MiB/s, done.
+Total 33 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/ZhouBrianna/2025-03-20-quarto.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git add .
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git commit -m "add no jekyll to docs"
+[main f110e91] add no jekyll to docs
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 docs/.nojekyll
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git push origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 344 bytes | 344.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/ZhouBrianna/2025-03-20-quarto.git
+   8c1add6..f110e91  main -> main
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ make render
+quarto render
+[1/2] index.qmd
+[2/2] about.qmd
+
+Output created: docs/index.html
+
+touch docs/.nojekyll
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ make clean
+rm -rf _site
+rm -rf docs
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ make render
+quarto render
+[1/2] index.qmd
+[2/2] about.qmd
+
+Output created: docs/index.html
+
+touch docs/.nojekyll
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git add .
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git commit -m "create Makefile"
+[main 9f56f80] create Makefile
+ 1 file changed, 9 insertions(+)
+ create mode 100644 Makefile
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 350 bytes | 350.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ZhouBrianna/2025-03-20-quarto.git
+   f110e91..9f56f80  main -> main
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git reset --hard
+HEAD is now at 9f56f80 create Makefile
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git add .
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git commit -m "delete docs folder"
+[main 66511d8] delete docs folder
+ 21 files changed, 6015 deletions(-)
+ delete mode 100644 docs/.nojekyll
+ delete mode 100644 docs/about.html
+ delete mode 100644 docs/index.html
+ delete mode 100644 docs/search.json
+ delete mode 100644 docs/site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css
+ delete mode 100644 docs/site_libs/bootstrap/bootstrap-icons.css
+ delete mode 100644 docs/site_libs/bootstrap/bootstrap-icons.woff
+ delete mode 100644 docs/site_libs/bootstrap/bootstrap.min.js
+ delete mode 100644 docs/site_libs/clipboard/clipboard.min.js
+ delete mode 100644 docs/site_libs/quarto-html/anchor.min.js
+ delete mode 100644 docs/site_libs/quarto-html/popper.min.js
+ delete mode 100644 docs/site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css
+ delete mode 100644 docs/site_libs/quarto-html/quarto.js
+ delete mode 100644 docs/site_libs/quarto-html/tippy.css
+ delete mode 100644 docs/site_libs/quarto-html/tippy.umd.min.js
+ delete mode 100644 docs/site_libs/quarto-nav/headroom.min.js
+ delete mode 100644 docs/site_libs/quarto-nav/quarto-nav.js
+ delete mode 100644 docs/site_libs/quarto-search/autocomplete.umd.js
+ delete mode 100644 docs/site_libs/quarto-search/fuse.min.js
+ delete mode 100644 docs/site_libs/quarto-search/quarto-search.js
+ delete mode 100644 docs/styles.css
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 231 bytes | 231.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ZhouBrianna/2025-03-20-quarto.git
+   9f56f80..66511d8  main -> main
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git reset --hard
+HEAD is now at 66511d8 delete docs folder
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git commit --allow-empty -m "Initialising gh-pages branch"
+[main 8788a6d] Initialising gh-pages branch
+
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git switch --orphan gh-pages
+Switched to a new branch 'gh-pages'
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git commit --allow-empty -m "Initialising gh-pages branch"
+[gh-pages (root-commit) 73d9419] Initialising gh-pages branch
+
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git push origin gh-pages
+Enumerating objects: 2, done.
+Counting objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 182 bytes | 182.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'gh-pages' on GitHub by visiting:
+remote:      https://github.com/ZhouBrianna/2025-03-20-quarto/pull/new/gh-pages
+remote: 
+To https://github.com/ZhouBrianna/2025-03-20-quarto.git
+ * [new branch]      gh-pages -> gh-pages
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ git switch main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+(base) dhcp-128-189-83-169:2025-03-20-quarto briannazhou$ quarto publish gh-pages
+? Update site at https://ZhouBrianna.github.io/2025-03-20-quarto/? (Y/n) › Yes
+From https://github.com/ZhouBrianna/2025-03-20-quarto
+ * branch            gh-pages   -> FETCH_HEAD
+Rendering for publish:
+
+[1/2] index.qmd
+[2/2] about.qmd
+
+Preparing worktree (resetting branch 'gh-pages'; was at 73d9419)
+branch 'gh-pages' set up to track 'origin/gh-pages'.
+HEAD is now at 73d9419 Initialising gh-pages branch
+fatal: pathspec '.' did not match any files
+[gh-pages 2f0d45e] Built site for gh-pages
+ 23 files changed, 6028 insertions(+)
+ create mode 100644 .nojekyll
+ create mode 100644 about.html
+ create mode 100644 index.html
+ create mode 100644 robots.txt
+ create mode 100644 search.json
+ create mode 100644 site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css
+ create mode 100644 site_libs/bootstrap/bootstrap-icons.css
+ create mode 100644 site_libs/bootstrap/bootstrap-icons.woff
+ create mode 100644 site_libs/bootstrap/bootstrap.min.js
+ create mode 100644 site_libs/clipboard/clipboard.min.js
+ create mode 100644 site_libs/quarto-html/anchor.min.js
+ create mode 100644 site_libs/quarto-html/popper.min.js
+ create mode 100644 site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css
+ create mode 100644 site_libs/quarto-html/quarto.js
+ create mode 100644 site_libs/quarto-html/tippy.css
+ create mode 100644 site_libs/quarto-html/tippy.umd.min.js
+ create mode 100644 site_libs/quarto-nav/headroom.min.js
+ create mode 100644 site_libs/quarto-nav/quarto-nav.js
+ create mode 100644 site_libs/quarto-search/autocomplete.umd.js
+ create mode 100644 site_libs/quarto-search/fuse.min.js
+ create mode 100644 site_libs/quarto-search/quarto-search.js
+ create mode 100644 sitemap.xml
+ create mode 100644 styles.css
+origin  https://github.com/ZhouBrianna/2025-03-20-quarto.git (fetch)
+origin  https://github.com/ZhouBrianna/2025-03-20-quarto.git (push)
+To https://github.com/ZhouBrianna/2025-03-20-quarto.git
+   73d9419..2f0d45e  HEAD -> gh-pages
+
+NOTE: GitHub Pages sites use caching so you might need to click the refresh
+button within your web browser to see changes after deployment.
+
+[✓] Deploying gh-pages branch to website (this may take a few minutes)
+[✓] Published to https://ZhouBrianna.github.io/2025-03-20-quarto/
